@@ -1,0 +1,12 @@
+C:\Users\enriq\source\repos\Ventas\Entities\bin\Debug\net5.0\Entities.deps.json
+C:\Users\enriq\source\repos\Ventas\Entities\bin\Debug\net5.0\Entities.dll
+C:\Users\enriq\source\repos\Ventas\Entities\bin\Debug\net5.0\ref\Entities.dll
+C:\Users\enriq\source\repos\Ventas\Entities\bin\Debug\net5.0\Entities.pdb
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\Entities.csprojAssemblyReference.cache
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\Entities.dll
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\ref\Entities.dll
+C:\Users\enriq\source\repos\Ventas\Entities\obj\Debug\net5.0\Entities.pdb

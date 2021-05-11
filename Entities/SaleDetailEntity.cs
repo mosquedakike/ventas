@@ -7,12 +7,24 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    class SaleDetailEntity
+    public class SaleDetailEntity
     {
         [Key]
         public int SaleDetailId { get; set; }
 
+        //Relacion con BrandEntity
+        public int BrandId { get; set; }
+
+        [StringLength(100)]
+        public string BrandName { get; set; }
+
+        //Relacion con Employee
+        public int EmployeeId { get; set; }
+
+        public EmployeeEntity Employee { get; set; }
+
         //Relacion con ProducEntity
+        public int ProductId { get; set; }
 
         [StringLength(80)]
         public string ProductName { get; set; }
@@ -28,8 +40,6 @@ namespace Entities
 
         public DateTime RegistrationDate { get; set; }
 
-        //Relacion con BrandEntity
-        [StringLength(100)]
-        public string BrandName { get; set; }
+
     }
 }

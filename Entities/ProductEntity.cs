@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    class ProductEntity
+    public class ProductEntity
     {
         [Key]
         public int ProductId { get; set; }
@@ -17,6 +17,14 @@ namespace Entities
 
         [StringLength(100)]
         public string ProductDescription { get; set; }
+
+        //Relacion con BrandEntity
+        public int BrandId { get; set; }
+
+        public BrandEntity Brand { get; set; }
+
+        //Relacion con SaleDetailEntity
+        public ICollection<SaleDetailEntity> SaleDetails { get; set; }
 
     }
 }

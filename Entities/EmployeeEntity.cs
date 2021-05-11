@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    class EmployeeEntity
+    public class EmployeeEntity
     {
         [Key]
         public int EmployeeId { get; set; }
@@ -25,5 +25,8 @@ namespace Entities
 
         [StringLength(50)]
         public string Project { get; set; }
+
+        //Relacion con SaleDetailEntity
+        public ICollection<SaleDetailEntity> SaleDetals { get; set; }
     }
 }

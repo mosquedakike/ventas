@@ -21,12 +21,16 @@ namespace Entities
         [StringLength(30)]
         public string EmployeeLastName_2 { get; set; }
 
+        //Relacion con BrandEntity
+        public int BrandId { get; set; }
+
+        public BrandEntity Brand { get; set; }
+
         public string EmployeePosition { get; set; }
 
-        [StringLength(50)]
-        public string Project { get; set; }
+        public bool Status { get; set; }
 
-        //Relacion con SaleDetailEntity
-        public ICollection<SaleDetailEntity> SaleDetals { get; set; }
+        //Relacion con SaleEntity
+        public ICollection<SaleEntity> Sales { get; set; }
     }
 }

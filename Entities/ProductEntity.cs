@@ -15,16 +15,16 @@ namespace Entities
         [StringLength(80)]
         public string ProductName { get; set; }
 
-        [StringLength(100)]
+        [StringLength(600)]
         public string ProductDescription { get; set; }
 
-        //Relacion con BrandEntity
-        public int BrandId { get; set; }
+        [StringLength(100)]
+        public string Brand { get; set; }
 
-        public BrandEntity Brand { get; set; }
+        public bool Status { get; set; }
 
         //Relacion con SaleDetailEntity
-        public ICollection<SaleDetailEntity> SaleDetails { get; set; }
+        public ICollection<SaleEntity> Sales { get; set; }
 
     }
 }

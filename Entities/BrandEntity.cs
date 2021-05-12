@@ -18,8 +18,10 @@ namespace Entities
         [StringLength(100)]
         public string BrandProject { get; set; }
 
+        public bool Status { get; set; }
+
         //Relacion con SaleDetails
-        public ICollection<SaleDetailEntity> SaleDetails { get; set; }
+        public ICollection<EmployeeEntity> Employees { get; set; }
 
     }
 }

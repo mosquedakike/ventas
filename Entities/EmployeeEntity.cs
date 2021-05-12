@@ -12,12 +12,15 @@ namespace Entities
         [Key]
         public int EmployeeId { get; set; }
 
+        [Required]
         [StringLength(30)]
         public string EmployeeName { get; set; }
 
+        [Required]
         [StringLength(30)]
         public string EmployeeLastName { get; set; }
 
+        [Required]
         [StringLength(30)]
         public string EmployeeLastName_2 { get; set; }
 
@@ -28,6 +31,7 @@ namespace Entities
 
         public string EmployeePosition { get; set; }
 
+        [Required]
         public bool Status { get; set; }
 
         //Relacion con SaleEntity

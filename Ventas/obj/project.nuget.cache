@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "dqLkLtAnx1+FmIgKSqh7C1njsQqF1X2H6ZtEi67fR//cBvboFT8GuWB0zA2X7qCOtCrz81/VW6WTdxBD4ddF1w==",
-  "success": true,
+  "dgSpecHash": "3awqzpPm+LRV+/DKfzEgLxTZJ67lDq9XESlv9qjM9lslpkkCYrRQ07Iy3MlFv62WFB9AL+UZWuADAqa+HcD4eA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\enriq\\source\\repos\\Ventas\\Ventas\\Ventas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\enriq\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -13,9 +13,9 @@
     "C:\\Users\\enriq\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\enriq\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\enriq\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
-    "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.5\\microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
-    "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
-    "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
+    "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
+    "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
+    "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.6\\microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
     "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.5\\microsoft.entityframeworkcore.design.5.0.5.nupkg.sha512",
     "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.5\\microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
     "C:\\Users\\enriq\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.5\\microsoft.entityframeworkcore.sqlserver.5.0.5.nupkg.sha512",
@@ -111,5 +111,15 @@
     "C:\\Users\\enriq\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\enriq\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Degradación del paquete detectada: Microsoft.EntityFrameworkCore.SqlServer de 5.0.6 a 5.0.5. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n Ventas -> Business -> DataAccess -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.6) \r\n Ventas -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

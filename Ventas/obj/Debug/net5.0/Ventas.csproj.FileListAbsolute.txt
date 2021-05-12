@@ -104,3 +104,5 @@ C:\Users\enriq\source\repos\Ventas\Ventas\obj\Debug\net5.0\Ventas.pdb
 C:\Users\enriq\source\repos\Ventas\Ventas\obj\Debug\net5.0\Ventas.genruntimeconfig.cache
 C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Entities.dll
 C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Entities.pdb
+C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Business.dll
+C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Business.pdb

@@ -1,0 +1,12 @@
+C:\Users\enriq\source\repos\Ventas\Business\bin\Debug\net5.0\Business.deps.json
+C:\Users\enriq\source\repos\Ventas\Business\bin\Debug\net5.0\Business.dll
+C:\Users\enriq\source\repos\Ventas\Business\bin\Debug\net5.0\ref\Business.dll
+C:\Users\enriq\source\repos\Ventas\Business\bin\Debug\net5.0\Business.pdb
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\Business.csprojAssemblyReference.cache
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\Business.AssemblyInfoInputs.cache
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\Business.AssemblyInfo.cs
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\Business.dll
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\ref\Business.dll
+C:\Users\enriq\source\repos\Ventas\Business\obj\Debug\net5.0\Business.pdb

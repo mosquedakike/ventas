@@ -12,9 +12,11 @@ namespace Entities
         [Key]
         public int BrandId { get; set; }
 
+        [Required]
         [StringLength(100)]
         public string BrandName { get; set; }
 
+        [Required]
         [StringLength(100)]
         public string BrandProject { get; set; }
 

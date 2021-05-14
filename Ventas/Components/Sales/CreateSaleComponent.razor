@@ -1,0 +1,58 @@
+﻿@using Entities;
+@using Business;
+
+<div>
+    <EditForm Model="oSale">
+        <div class="form-group">
+            <label>Empleado</label>
+            <InputSelect class="form-control" @bind-Value="oSale.EmployeeId">
+                <option value="">Seleccione empleado</option>
+                @foreach (var employee in employees)
+                {
+                    <option value="@employee.EmployeeId">@employee.EmployeeName @employee.EmployeeLastName @employee.EmployeeLastName_2</option>
+                }
+            </InputSelect>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Producto</label>
+            <input @bind-value="oSale.ProductNameSale" class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Buscar producto...">
+            <datalist id="datalistOptions">
+                @foreach (var product in products)
+                {
+                    <option value="@product.ProductName"></option>
+                }
+            </datalist>
+        </div>
+        <div class="form-group">
+            <label>Viscosidad</label>
+            <InputText @bind-Value="oSale.ProductDescriptionSale" class="form-control"></InputText>
+        </div>
+        <div class="form-group">
+            <label>Litros</label>
+            <InputNumber @bind-Value="oSale.Quantity" class="form-control" min="1"></InputNumber>
+        </div>
+        <input class="btn btn-primary" type="button" value="Guardar" @onclick="SaveSale" />
+    </EditForm>
+</div>
+
+@code {
+    SaleEntity oSale = new SaleEntity();
+    ProductEntity oProduct = new ProductEntity();
+
+    List<ProductEntity> products = new List<ProductEntity>();
+    List<EmployeeEntity> employees = new List<EmployeeEntity>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = B_Product.ProductList();
+        employees = B_Employee.EmployeeList();
+    }
+
+    private void SaveSale()
+    {
+        oSale.ProductId = 1;
+        oSale.SaleDateUser = DateTime.Now;
+        oSale.SaleDate = DateTime.Now;
+        B_Sale.CreateSale(oSale);
+    }
+}

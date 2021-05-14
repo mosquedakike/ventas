@@ -79,6 +79,20 @@ using Ventas.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\enriq\source\repos\Ventas\Ventas\_Imports.razor"
+using Ventas.Components.Sales;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\enriq\source\repos\Ventas\Ventas\_Imports.razor"
+using Ventas.Pages.Sales;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

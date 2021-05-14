@@ -22,7 +22,16 @@ namespace Entities
 
         public EmployeeEntity Employee { get; set; }
 
+        [Required]
+        public string ProductNameSale { get; set; }
+
+        [Required]
+        public string ProductDescriptionSale { get; set; }
+
+        [Required]
         public int Quantity { get; set; }
+
+        public DateTime SaleDateUser { get; set; }
 
         public DateTime SaleDate { get; set; }
     }

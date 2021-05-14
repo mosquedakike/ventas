@@ -106,3 +106,9 @@ C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Entities.dll
 C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Entities.pdb
 C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Business.dll
 C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\Business.pdb
+C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\DataAccess.dll
+C:\Users\enriq\source\repos\Ventas\Ventas\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\enriq\source\repos\Ventas\Ventas\obj\Debug\net5.0\RazorDeclaration\Components\Sales\CreateSaleComponent.razor.g.cs
+C:\Users\enriq\source\repos\Ventas\Ventas\obj\Debug\net5.0\RazorDeclaration\Pages\Sales\CreateSalePage.razor.g.cs
+C:\Users\enriq\source\repos\Ventas\Ventas\obj\Debug\net5.0\Razor\Components\Sales\CreateSaleComponent.razor.g.cs
+C:\Users\enriq\source\repos\Ventas\Ventas\obj\Debug\net5.0\Razor\Pages\Sales\CreateSalePage.razor.g.cs

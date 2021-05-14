@@ -47,11 +47,11 @@ namespace DataAccess
                 );
 
             modelBuilder.Entity<SaleEntity>().HasData(
-                new SaleEntity { SaleId = 1, ProductId = 1, EmployeeId = 1, Quantity = 18, SaleDate = DateTime.Now },
-                new SaleEntity { SaleId = 2, ProductId = 3, EmployeeId = 2, Quantity = 50, SaleDate = DateTime.Now },
-                new SaleEntity { SaleId = 3, ProductId = 2, EmployeeId = 2, Quantity = 2, SaleDate = DateTime.Now },
-                new SaleEntity { SaleId = 4, ProductId = 2, EmployeeId = 2, Quantity = 5, SaleDate = DateTime.Now },
-                new SaleEntity { SaleId = 5, ProductId = 1, EmployeeId = 1, Quantity = 87, SaleDate = DateTime.Now }
+                new SaleEntity { SaleId = 1, ProductId = 1, EmployeeId = 1, ProductNameSale = "QS MAXIMA VISCOSIDAD SAE 25W50 CF4", ProductDescriptionSale = "25W50", Quantity = 18, SaleDateUser = DateTime.Now, SaleDate = DateTime.Now },
+                new SaleEntity { SaleId = 2, ProductId = 3, EmployeeId = 2, ProductNameSale = "QS GREEN OIL SAE 140",  ProductDescriptionSale = "GREEN OIL", Quantity = 50, SaleDateUser = DateTime.Now, SaleDate = DateTime.Now },
+                new SaleEntity { SaleId = 3, ProductId = 2, EmployeeId = 2, ProductNameSale = "ANTICONGELANTE CONCENTRACION IDEAL", ProductDescriptionSale = "Anticongelante", Quantity = 2, SaleDateUser = DateTime.Now, SaleDate = DateTime.Now },
+                new SaleEntity { SaleId = 4, ProductId = 2, EmployeeId = 2, ProductNameSale = "ANTICONGELANTE CONCENTRACION IDEAL", ProductDescriptionSale = "Anticongelante", Quantity = 5, SaleDateUser = DateTime.Now, SaleDate = DateTime.Now },
+                new SaleEntity { SaleId = 5, ProductId = 1, EmployeeId = 1, ProductNameSale = "QS MAXIMA VISCOSIDAD SAE 25W50 CF4", ProductDescriptionSale = "25W50", Quantity = 87, SaleDateUser = DateTime.Now, SaleDate = DateTime.Now }
                 );
         }
     }

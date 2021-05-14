@@ -27,10 +27,12 @@ namespace DataAccess.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BrandName")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("BrandProject")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -69,14 +71,17 @@ namespace DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("EmployeeLastName")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("EmployeeLastName_2")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("EmployeeName")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
@@ -127,10 +132,12 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("ProductDescription")
+                        .IsRequired()
                         .HasMaxLength(600)
                         .HasColumnType("nvarchar(600)");
 
                     b.Property<string>("ProductName")
+                        .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
@@ -178,13 +185,24 @@ namespace DataAccess.Migrations
                     b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
+                    b.Property<string>("ProductDescriptionSale")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
+
+                    b.Property<string>("ProductNameSale")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("SaleDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("SaleDateUser")
                         .HasColumnType("datetime2");
 
                     b.HasKey("SaleId");
@@ -200,41 +218,56 @@ namespace DataAccess.Migrations
                         {
                             SaleId = 1,
                             EmployeeId = 1,
+                            ProductDescriptionSale = "25W50",
                             ProductId = 1,
+                            ProductNameSale = "QS MAXIMA VISCOSIDAD SAE 25W50 CF4",
                             Quantity = 18,
-                            SaleDate = new DateTime(2021, 5, 12, 12, 30, 5, 802, DateTimeKind.Local).AddTicks(5699)
+                            SaleDate = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(7033),
+                            SaleDateUser = new DateTime(2021, 5, 13, 16, 37, 20, 860, DateTimeKind.Local).AddTicks(7875)
                         },
                         new
                         {
                             SaleId = 2,
                             EmployeeId = 2,
+                            ProductDescriptionSale = "GREEN OIL",
                             ProductId = 3,
+                            ProductNameSale = "QS GREEN OIL SAE 140",
                             Quantity = 50,
-                            SaleDate = new DateTime(2021, 5, 12, 12, 30, 5, 809, DateTimeKind.Local).AddTicks(1892)
+                            SaleDate = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8079),
+                            SaleDateUser = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8056)
                         },
                         new
                         {
                             SaleId = 3,
                             EmployeeId = 2,
+                            ProductDescriptionSale = "Anticongelante",
                             ProductId = 2,
+                            ProductNameSale = "ANTICONGELANTE CONCENTRACION IDEAL",
                             Quantity = 2,
-                            SaleDate = new DateTime(2021, 5, 12, 12, 30, 5, 809, DateTimeKind.Local).AddTicks(1975)
+                            SaleDate = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8090),
+                            SaleDateUser = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8086)
                         },
                         new
                         {
                             SaleId = 4,
                             EmployeeId = 2,
+                            ProductDescriptionSale = "Anticongelante",
                             ProductId = 2,
+                            ProductNameSale = "ANTICONGELANTE CONCENTRACION IDEAL",
                             Quantity = 5,
-                            SaleDate = new DateTime(2021, 5, 12, 12, 30, 5, 809, DateTimeKind.Local).AddTicks(1986)
+                            SaleDate = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8098),
+                            SaleDateUser = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8094)
                         },
                         new
                         {
                             SaleId = 5,
                             EmployeeId = 1,
+                            ProductDescriptionSale = "25W50",
                             ProductId = 1,
+                            ProductNameSale = "QS MAXIMA VISCOSIDAD SAE 25W50 CF4",
                             Quantity = 87,
-                            SaleDate = new DateTime(2021, 5, 12, 12, 30, 5, 809, DateTimeKind.Local).AddTicks(1994)
+                            SaleDate = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8107),
+                            SaleDateUser = new DateTime(2021, 5, 13, 16, 37, 20, 864, DateTimeKind.Local).AddTicks(8103)
                         });
                 });
 

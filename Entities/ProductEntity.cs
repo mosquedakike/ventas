@@ -12,9 +12,11 @@ namespace Entities
         [Key]
         public int ProductId { get; set; }
 
+        [Required]
         [StringLength(80)]
         public string ProductName { get; set; }
 
+        [Required]
         [StringLength(600)]
         public string ProductDescription { get; set; }
 
